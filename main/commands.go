@@ -13,7 +13,9 @@ func addTask(description string) (int64, error) {
 		UpdatedAt:   time.Now().Format(time.RFC3339),
 	}
 
-	return id, nil
+	
+
+	return -1, nil
 }
 
 func deleteTask(id int64) error {
